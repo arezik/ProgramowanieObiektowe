@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj Liczbe: ");
+        int n = scanner.nextInt();
+
+        scanner.close();
+
+        if(n%2 == 0){
+            System.out.println("Parzysta");
+        }
+        else {
+            System.out.println("Nieparzysta");
+        };
+        scanner.close();
+
+        if(n%3 == 0){
+            System.out.println("Podzielan przez 3");
+        }
+        else {
+            System.out.println("Niepodzielna przez 3");
+        };
+
+        int x = 0;
+        for(int i = 0; i < n+1; i++){
+            x += i;
+        }
+        System.out.println(x);
+
+        int y = 0;
+        for(int i = 0; i < n; i+=2){
+            y++;
+        }
+        System.out.println(y);
+    }
+}
