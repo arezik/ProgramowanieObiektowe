@@ -1,0 +1,13 @@
+
+
+i, Warunek i < 4, wynik += x, x *= 2, Nowa wartość x, Nowa wartość wynik
+///
+0   Prawda    0 + 2    2 * 2    4      2
+1   Prawda    2 + 4    4 * 2    8      6
+2   Prawda    6 + 8    8 * 2    16     14
+3   Prawda    14 + 16  16 * 2   32     30
+4   Fałsz     -        -        32     30
+
+Wynik programu:
+32
+30
