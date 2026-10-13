@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] liczby = new int[10];
+
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Podaj liczbe: ");
+            liczby[i] = scanner.nextInt();
+        }
+
+        int max = liczby[0];
+        int min = liczby[0];
+        int suma = 0;
+
+        for (int i = 0; i < liczby.length; i++) {
+            if (liczby[i] > max) {
+                max = liczby[i];
+            }
+            if (liczby[i] < min) {
+                min = liczby[i];
+            }
+            suma = suma + liczby[i];
+        }
+
+        double srednia = (double) suma / liczby.length;
+
+        int wieksze = 0;
+        for (int i = 0; i < liczby.length; i++) {
+            if (liczby[i] > srednia) {
+                wieksze++;
+            }
+        }
+
+        System.out.println("Najwieksza wartosc: " + max);
+        System.out.println("Najmniejsza wartosc: " + min);
+        System.out.println("Suma wszystkich elementow: " + suma);
+        System.out.println("Srednia arytmetyczna: " + srednia);
+        System.out.println("Liczba wartosci wiekszych od sredniej: " + wieksze);
+
+        scanner.close();
+    }
+}
