@@ -1,0 +1,28 @@
+Klasa: Ksiazka
+Stan:
+- tytul
+- autor
+- isbn
+- rokWydania
+Odpowiedzialności:
+- Przechowywanie podstawowych informacji o książce
+
+Klasa: Czytelnik
+Stan:
+- imie
+- nazwisko
+- numerKarty
+Odpowiedzialności:
+- Przechowywanie danych osoby korzystającej z biblioteki
+
+Klasa: Wypozyczenie
+Stan:
+- ksiazka
+- czytelnik
+- dataWypozyczenia
+- terminZwrotu
+Odpowiedzialności:
+- Łączenie książki z czytelnikiem oraz pilnowanie terminów zwrotu
+
+Zależności:
+Obiekt Wypozyczenie przechowuje referencje do konkretnej Ksiazki oraz Czytelnika.
