@@ -1,0 +1,20 @@
+A. System wypożyczalni samochodów:
+- numerRejestracyjny
+- marka
+- model
+- cenaZaDobe
+- statusWypozyczenia
+
+B. Gra wyścigowa:
+- maksymalnaPredkosc
+- aktualnyBieg
+- poziomPaliwa
+- wspolrzedne
+
+C. System warsztatu samochodowego:
+- numerVIN
+- przebieg
+- rodzajSilnika
+- historiaNapraw
+
+Ponieważ w zależności od programu potrzebujemy zupełnie innych cech. Abstrakcja polega na wybieraniu tylko tych rzeczy, które są nam potrzebne w danym problemie.
