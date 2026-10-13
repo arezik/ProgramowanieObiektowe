@@ -1,0 +1,16 @@
+1. Produkt
+   - Stan: nazwa, cena
+   - Odpowiedzialność: Przechowywanie danych o towarze
+2. Klient
+   - Stan: login, adres
+   - Odpowiedzialność: Przechowywanie danych kupującego
+3. Koszyk
+   - Stan: listaProduktów
+   - Odpowiedzialność: Zbieranie produktów wybranych przez klienta przed zakupem
+4. Zamowienie
+   - Stan: klient, produkty, status
+   - Odpowiedzialność: Sfinalizowanie zakupu
+1. Zamowienie wie o Kliencie i Produktach, a Koszyk wie o Produktach.
+2. Odpowiedzialności są przypisane poprawnie.
+3. Świadomie pomijamy np. kolor taśmy do pakowania paczek.
+4. Nie potrzebujemy ich, ponieważ nie są istotne w logice sklepu internetowego.
