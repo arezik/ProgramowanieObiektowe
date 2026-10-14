@@ -1,0 +1,27 @@
+public class zadanie4 {
+    public class Car {
+        private String brand;
+        private String model;
+        private int productionYear;
+        private int mileage;
+
+        public Car(String brand, String model, int productionYear, int mileage) {
+            this.brand = brand;
+            this.model = model;
+            this.productionYear = productionYear;
+            this.mileage = mileage;
+        }
+
+        public Car(String brand, String model, int productionYear) {
+            this(brand, model, productionYear, 0);
+        }
+
+        public Car(String brand, String model) {
+            this(brand, model, 2026, 0);
+        }
+
+        public Car() {
+            this("Nieznana", "Nieznany", 2026, 0);
+        }
+    }
+}
