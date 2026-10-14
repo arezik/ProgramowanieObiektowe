@@ -1,0 +1,27 @@
+public class zadanie3 {
+    public static class Book {
+        String title;
+        String author;
+        int publicationYear;
+
+        public Book(String title, String author, int publicationYear) {
+                this.title = title;
+                this.author = author;
+                this.publicationYear = publicationYear;
+        }
+
+        public Book(String title, String author) {
+            this(title, author, 0);
+        }
+
+        public Book() {
+            this("Nieznany tytuł", "Nieznany autor", 0);
+        }
+    }
+    public static void main(String[] args) {
+        Book k1 = new Book();
+        Book k2 = new Book("Oczy zielone", "Zenek");
+        Book k3 = new Book("Oczy niebieskie", "Martyniuk", 1923);
+        System.out.println(k1.title + " " + k2.title + " " + k3.title);
+    }
+}
