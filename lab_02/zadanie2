@@ -1,0 +1,22 @@
+public class zadanie2 {
+    public static class Point {
+        Double x;
+        Double y;
+
+        public Point(Double x, Double y) {
+            this.x = x;
+            this.y = y;
+        }
+        public double distance(Point inny) {
+            double xx = this.x - inny.x;
+            double yy = this.y - inny.y;
+            double wynik = Math.sqrt((xx*xx) + (yy*yy));
+            return wynik;
+        }
+        public static void main(String[] args) {
+            Point p1 = new Point(3.0, 15.0);
+            Point p2 = new Point(9.0, -231.0);
+            System.out.println(p1.distance(p2));
+        }
+    }
+}
